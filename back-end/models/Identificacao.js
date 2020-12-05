@@ -1,11 +1,9 @@
 const mongoose = require('mongoose')
 
 const esquema = mongoose.Schema({
-    nome_proprietario: { type: String, required: true},
     codigo:{ type: Number, required: true},
-    situacao: { type: String, required: true },
-    valor_locacao: { type: Number, required: true, default: 200 },
-    endereco: { type: String, required: true }
+    nome_proprietario: { type: String, required: true},
+    
 })
 
 // PARÂMETROS DO mongoose.model()

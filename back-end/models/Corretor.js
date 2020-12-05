@@ -1,9 +1,10 @@
 const mongoose = require('mongoose')
 
 const esquema = mongoose.Schema({
-    nome_proprietario: { type: String, required: true},
-    codigo:{ type: Number, required: true},
+    nome: { type: String, required: true},
+    cod_creci:{ type: Number, required: true},
     
+        
 })
 
 // PARÂMETROS DO mongoose.model()
@@ -12,4 +13,4 @@ const esquema = mongoose.Schema({
 // 3º -> o nome da COLEÇÃO no BD que irá receber os objetos que serão
 //       criados a partir deste model (inicial minúscula, plural do
 //       nome do model)
-module.exports = mongoose.model('Corretor', esquema, 'corretores')
+module.exports = mongoose.model('Corretor', esquema, 'corretor')

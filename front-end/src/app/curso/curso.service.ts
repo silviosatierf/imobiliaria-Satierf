@@ -13,7 +13,7 @@ export class CursoService {
   constructor(private http : HttpClient) { }
 
   listar(){
-      return this.http.get(this.apiUri).toPromise()
+    return this.http.get(this.apiUri).toPromise()
   }
 
   excluir(id : string){
@@ -25,11 +25,11 @@ export class CursoService {
   }
 
   obterUm(id: string){
-      return this.http.get(this.apiUri + '/' + id).toPromise()
+    return this.http.get(this.apiUri + '/' + id).toPromise()
   }
 
   atualizar(body : any){
-      return this.http.put(this.apiUri, body).toPromise()
+    return this.http.put(this.apiUri, body).toPromise()
   }
 
 

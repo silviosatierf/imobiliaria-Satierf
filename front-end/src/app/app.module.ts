@@ -27,6 +27,7 @@ import { TurmaListComponent } from './turma/turma-list/turma-list.component';
 import { TurmaFormComponent } from './turma/turma-form/turma-form.component';
 
 
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -37,6 +38,7 @@ import { TurmaFormComponent } from './turma/turma-form/turma-form.component';
     CursoFormComponent,
     TurmaListComponent,
     TurmaFormComponent
+    
   ],
   imports: [
     BrowserModule,
